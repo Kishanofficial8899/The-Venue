@@ -1,0 +1,418 @@
+@import "./Variable/font.scss";
+@import "./Variable/responsive";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/***********************************Header********************************/
+.header_logo {
+    .font-roboto {
+        font-size: 1.5rem;
+        font-family: $header_logo_menu_title;
+    }
+
+    .header_logo_title {
+        font-family: $header_logo_title;
+        font-weight: 200;
+    }
+}
+
+.Menu-Icon_Right {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+
+    .Menu-icon {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.carrousel_wrapper {
+    overflow: hidden;
+}
+
+.carrousel_image {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    @media #{$breakpoint-xs} {
+        background-size: cover cover !important;
+        background-position: center !important;
+    }
+
+    @media #{$breakpoint-xs-landscape} {
+        background-size: cover cover !important;
+        background-position: center !important;
+    }
+
+}
+
+/*
+     COUNTDOWN
+*/
+
+.countdown-wrapper {
+    position: absolute;
+    bottom: 0px;
+    color: #ffffff;
+
+    .countdown-top {
+        background: #f44336;
+        font-size: 19px;
+        padding: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+
+        @media #{$breakpoint-xs} {
+            font-size: 0.9rem;
+        }
+
+        @media #{$breakpoint-xs-landscape} {
+            font-size: 0.9rem;
+        }
+    }
+
+    .countdown-bottom {
+        background-color: #ff4800;
+        display: flex;
+        padding: 10px 20px !important;
+
+        @media #{$breakpoint-xs} {
+            padding: 10px 10px;
+        }
+
+        @media #{$breakpoint-xs-landscape} {
+            padding: 10px 10px;
+        }
+
+        .countdown-item {
+            &:last-child .countdown-time {
+                border: none !important;
+            }
+
+            .countdown-time {
+                font-size: 4rem;
+                margin-right: 1.5rem;
+                padding-right: 1rem;
+                font-family: $header_logo_title;
+                border-right: 1px solid #f44336;
+
+                @media #{$breakpoint-xs} {
+                    padding-right: 1rem !important;
+                    margin-right: 1rem;
+                    font-size: 2rem;
+                }
+
+                @media #{$breakpoint-xs-landscape} {
+                    padding: 10px 10px;
+                }
+            }
+
+            .countdown-tags {
+                font-family: $header_logo_title;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+/*
+      EVENT INFO
+*/
+.bg_black {
+    background-color: #3c3c3c;
+
+    .center-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        @media #{$breakpoint-md} {
+            width: 100%;
+        }
+
+        .venue_wrapper {
+            display: flex;
+            padding: 170px 0px;
+
+            @media #{$breakpoint-sm} {
+                flex-direction: column;
+
+            }
+
+            @media #{$breakpoint-xs} {
+                flex-direction: column;
+
+            }
+
+            @media #{$breakpoint-md} {
+                padding: 170px 0rem !important;
+            }
+
+            .venue_item {
+                width: 50%;
+                color: #fff;
+                margin: 0 1rem;
+
+                @media #{$breakpoint-sm} {
+                    width: 60% !important;
+                    padding: 3rem 0px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    width: 60% !important;
+                    padding: 3rem 0px;
+                }
+
+                @media #{$breakpoint-xs-landscape} {
+                    width: 60% !important;
+                    padding: 3rem 0px;
+                }
+
+
+
+                @media #{$breakpoint-md} {
+                    width: 55%;
+                    padding-right: 1rem !important;
+                }
+
+                .venue_outer {
+                    width: 300px;
+                    border: 2px solid #828282;
+                    margin: auto;
+                    padding: 5px;
+                }
+
+                .venue_inner {
+                    border: 2px solid #828282;
+                    padding: 0px 20px;
+                    height: 22rem;
+                    transition: all 500ms ease;
+                    position: relative;
+
+                    &:hover {
+                        background: #3e3e3e;
+                    }
+                }
+
+                .venue_icon_square {
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    -ms-transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    top: -54px;
+                    left: 100px;
+                }
+
+                .bg_red {
+                    background: #f44336;
+                }
+
+                .bg-purpule {
+                    background-color: #ffa800;
+                }
+
+                .venue_icon {
+                    width: 50px;
+                    height: 50px;
+                    background-size: contain !important;
+                    background-repeat: no-repeat !important;
+                    position: absolute;
+                    top: -30px;
+                    left: 124px;
+                }
+
+                .venue_title {
+                    font-size: 2rem;
+                    margin: 90px 0px 20px 0px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #5d5d5d;
+                    text-align: center;
+                }
+
+                .venue_decs {
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    font-size: 1.3rem;
+                    font-family: $header_logo_title;
+                    font-weight: 100;
+                    line-height: 2rem;
+                }
+
+                .sm-text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*
+    HIGHLIGHT
+*/
+
+.center-wrapper {
+    width: 100%;
+    padding: 0rem 7rem;
+    margin: 0 auto;
+
+
+    @media #{$breakpoint-xs} {
+        padding: 0px 1rem;
+    }
+
+    @media #{$breakpoint-xs-landscape} {
+        padding: 2rem;
+
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #2c2c2c;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .highlight_description {
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: $header_logo_title;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        padding: 30px 0px;
+
+
+
+    }
+}
+
+.discount_wrapper {
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+
+
+
+    @media #{$breakpoint-sm} {
+        flex-direction: column;
+    }
+
+
+    @media #{$breakpoint-xs} {
+        flex-direction: column !important;
+        margin-top: 1rem !important;
+    }
+
+    .discount_percentage {
+        padding-right: 100px;
+        margin-top: 2.5rem;
+
+
+        span:nth-child(1) {
+            display: block;
+            font-size: 7rem;
+            line-height: 20px;
+            color: #f44336;
+            font-weight: 400;
+            padding: 0.5rem 0;
+
+            @media #{$breakpoint-xs} {
+                padding: 1rem 0rem;
+            }
+
+        }
+
+        span:nth-child(2) {
+            display: block;
+            font-size: 3rem;
+            padding-top: 2rem;
+
+        }
+    }
+
+    .discount-description {
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-bottom: 1px solid salmon;
+            margin-top: 0.6rem;
+            padding-bottom: 0.2rem;
+        }
+
+        p {
+            padding-top: 0.5rem;
+            line-height: 20px;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: 300;
+            font-family: $header_logo_title;
+        }
+    }
+}
+
+.Ticketicon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.location_wrapper {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.map {
+    padding: 10px 120px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    @media #{$breakpoint-xs} {
+        padding: 5px 20px;
+        width: 100%;
+
+    }
+
+    @media #{$breakpoint-xs-landscape} {
+        margin: 0 auto
+    }
+
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #f44336;
+    color: white;
+    padding: 0.2rem 0px;
+    font-family: $header_logo_title;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-style: italic;
+
+
+    span {
+        color: red;
+        font-size: 1.3rem;
+    }
+}
