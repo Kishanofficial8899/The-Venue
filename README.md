@@ -2,7 +2,7 @@
 
 ![More Info](https://raw.githubusercontent.com/Kishanofficial8899/The-Venue/master/src/resources/Images/check.jpg)
 
-In the project directory, you can run:
+#In the project directory, you can run:
 
 ### `yarn start` && `npm start`
 

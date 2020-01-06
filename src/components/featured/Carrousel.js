@@ -1,11 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-
 //all the Slider images
 import SliderImage1 from "../../resources/Images/FirstSlide.jpeg";
 import SliderImage2 from "../../resources/Images/SeconSlide.jpg";
 import SliderImage3 from "../../resources/Images/ThirdSlide.jpeg";
-
 const Carrousel = () => {
   const setting = {
     dots: false,
