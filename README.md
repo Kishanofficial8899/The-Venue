@@ -1,6 +1,6 @@
 ## Arijit Singh Next Music Event Venue
 
-![More Info](https://raw.githubusercontent.com/Kishanofficial8899/The-Venue/blob/master/src/resources/Images/check.jpg)
+![More Info](https://raw.githubusercontent.com/Kishanofficial8899/The-Venue/master/src/resources/Images/check.jpg)
 
 In the project directory, you can run:
 
