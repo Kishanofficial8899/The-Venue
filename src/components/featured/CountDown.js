@@ -4,14 +4,14 @@ import LeftSlider from "react-reveal/Slide";
 
 export default class CountDown extends Component {
   state = {
-    deadline: "Jan, 25,2020",
+    deadline: "March, 28,2020",
     days: "0",
     hours: "0",
     minutes: "0",
     second: "0"
   };
 
-  startCountDown = (deadline) => {
+  startCountDown = deadline => {
     const time = Date.parse(deadline) - Date.parse(new Date());
     if (time < 0) {
       console.log("opps ! You Are Miss it");

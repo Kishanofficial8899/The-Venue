@@ -17,10 +17,9 @@ const Index = () => {
                     className="venue_icon"
                     style={{
                       background: `url(${CalenderImage})`
-                    }}
-                  ></div>
+                    }}></div>
                   <div className="venue_title">Event Date & Time</div>
-                  <div className="venue_decs">January 25 | 7 PM</div>
+                  <div className="venue_decs">March 28 | 7 PM</div>
                 </div>
               </div>
             </div>
@@ -36,12 +35,10 @@ const Index = () => {
                     className="venue_icon"
                     style={{
                       background: `url(${Location})`
-                    }}
-                  ></div>
+                    }}></div>
                   <div className="venue_title">Event Location</div>
                   <div className="venue_decs sm-text">
-                    JioWorld Garden, BKC, Mumbai Plot No: RG1A, G-Block, Bandra
-                    Kurla Complex, Bandra East, Mumbai,
+                    JLN Stadium, New Delhi
                   </div>
                 </div>
               </div>
